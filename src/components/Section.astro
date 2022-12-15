@@ -1,0 +1,11 @@
+---
+interface Props {
+  color: string;
+}
+
+const { color } = Astro.props;
+---
+
+<section class="h-screen bg-black" style={`background-color: ${color}`}>
+  <slot />
+</section>
